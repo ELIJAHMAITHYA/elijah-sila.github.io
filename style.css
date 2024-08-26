@@ -496,6 +496,9 @@
     transform: scale(1);
   }
   
+  /* //
+
+  // */
   .blogs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
