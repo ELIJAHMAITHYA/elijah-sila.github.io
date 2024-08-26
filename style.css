@@ -4,7 +4,31 @@
     box-sizing: border-box;
     list-style: none;
   }
-  
+  /* Remove border-radius from the .image class */
+.header-content .left-header .image {
+  height: 90%;
+  width: 68%;
+  margin-left: 4rem;
+  background-color: var(--color-black);
+  overflow: hidden; /* Ensure the image stays within the rounded corners */
+  transition: all 0.4s ease-in-out;
+}
+
+/* Add border-radius directly to the img tag */
+.header-content .left-header .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+  filter: grayscale(100%);
+  border-radius: var(--br-sm-2); /* Apply border-radius to the image */
+}
+
+/* Optional: Adjust border-radius on hover if needed */
+.header-content .left-header .image img:hover {
+  filter: grayscale(0);
+}
+
   :root {
     --color-primary: #191d2b;
     --color-secondary: #27AE60;
@@ -960,5 +984,6 @@
       font-size: 4rem;
     }
   }
+
   
   /*# sourceMappingURL=styles.css.map */
